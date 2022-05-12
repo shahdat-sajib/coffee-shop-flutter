@@ -48,9 +48,23 @@ class _HomePageState extends State<HomePage> {
             padding: const EdgeInsets.symmetric(horizontal: 25.0),
             child: Text("Find the best coffee for you", 
             style: GoogleFonts.bebasNeue(
-              fontSize: 60.0
+              fontSize: 56.0
               ),
           ),),
+
+          const SizedBox(height: 25,),
+
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 25.0),
+            child: TextField(
+              decoration: InputDecoration(
+                focusedBorder: const OutlineInputBorder(),
+                enabledBorder: OutlineInputBorder(
+                  borderSide: BorderSide(color: Colors.grey.shade600),
+                )
+              ),
+            ),
+          ),
         ],
       ),
     );
